@@ -30,7 +30,7 @@ def main():
 def write2Json(roomInfoList):
     if len(roomInfoList) > 0:
         roomInfoJsonStr = json.dumps(roomInfoList)
-        dumpFile = open("./bilibili_room.json", "w")
+        dumpFile = open("./bilibili_live.json", "w")
         if dumpFile:
             dumpFile.write(roomInfoJsonStr)
             dumpFile.close()
@@ -39,7 +39,7 @@ def write2Json(roomInfoList):
 
 def write2M3U8(roomInfoList):
     if len(roomInfoList) > 0:
-        dumpFile = open("./bilibili_room.m3u8", "w")
+        dumpFile = open("./bilibili_live.m3u8", "w")
         if dumpFile:
             for roomInfo in roomInfoList:
                 roomName = roomInfo["roomName"]
