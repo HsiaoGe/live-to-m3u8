@@ -3,10 +3,10 @@ import requests
 g_hs = requests.Session()
 
 platform = "web"
-parent_area_id = 1
+parent_area_id = 10
 cate_id = 0
 area_id = 33
-sort_type = "income"
+sort_type = "online"
 tag_vesion = 1
 
 topRoomNum = 50
